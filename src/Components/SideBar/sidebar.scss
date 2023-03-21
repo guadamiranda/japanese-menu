@@ -1,0 +1,44 @@
+@import '../../Styles/colors.scss';
+
+.sidebar{
+    width: 300px;
+    height: 900px;
+    top: 0;
+    left: 0;
+    //background: url(//s.ytimg.com/yt/imgbin/www-refreshbg-vflC3wnbM.png) 0 0;
+    background-color: var(--whiteLamp);
+    background-repeat: repeat;
+    border-right: 8px solid var(--brownDoor);
+
+    &__title{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        color: var(--brownDoor);
+        border-bottom: 8px solid var(--brownDoor);
+        border-top: 8px solid var(--brownDoor);
+    }
+
+    &__body{
+
+        &__section{
+
+            &__title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+.icon-menu{
+    color: var(--brownDoor);
+}
+
+.tinyJapaneseSpan{
+    font-size: 12px;
+    margin-left: 6px;
+    font-style: italic;
+    color: var(--lightGrey);
+}
