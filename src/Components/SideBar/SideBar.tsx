@@ -7,10 +7,13 @@ import { BiSushi, BiDrink } from 'react-icons/bi'
 const { Panel } = Collapse;
 
 interface ISidebar {
-    menuItems: Array<Object>
+    ramens: Array<Object>,
+    sushis: Array<Object>,
+    drinks: Array<Object>,
+    desserts: Array<Object>
 }
 
-export const Sidebar: React.FC<ISidebar> = ({menuItems}) => {
+export const SideBar: React.FC<ISidebar> = ({ramens, sushis, drinks, desserts}) => {
 
     const panelStyle = {
         borderBottom: '3px solid #b98357',
@@ -24,7 +27,7 @@ export const Sidebar: React.FC<ISidebar> = ({menuItems}) => {
                 <div className='sidebar__body__section'>
                     <Collapse size="small" bordered={false}>
                         <Panel header={<div className='sidebar__body__section__title'><span>Ramen<span className='tinyJapaneseSpan'>拉麺</span></span><MdOutlineRamenDining className='icon-menu'/></div>} key="1" style={panelStyle}>
-                            <span>Hola</span>
+                            {ramens.map((ramen) => <span>{ramen.name}</span>)}
                         </Panel>
                         <Panel header={<div className='sidebar__body__section__title'><span>Sushi<span className='tinyJapaneseSpan'>寿司</span></span><BiSushi className='icon-menu'/></div>} key="2" style={panelStyle}>
                             <span>Hola</span>
