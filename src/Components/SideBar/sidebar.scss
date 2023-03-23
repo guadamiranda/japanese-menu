@@ -5,6 +5,7 @@
     height: 100vh;
     top: 0;
     left: 0;
+    position: absolute;
     //background: url(//s.ytimg.com/yt/imgbin/www-refreshbg-vflC3wnbM.png) 0 0;
     background-color: var(--whiteLamp);
     background-repeat: repeat;
@@ -31,7 +32,19 @@
 
             &__options{
                 font-size: 17px;
-            }
+                cursor: pointer;
+                border: none;
+                background-color: transparent;
+                transition: 0.5s;
+                text-align: left;
+                display: flex;
+                align-items: center;
+            } 
+            
+            &__options:hover{
+                background-color: var(--options);
+                transition: 0.5s;
+            } 
         }
     }
 }
@@ -45,4 +58,15 @@
     margin-left: 6px;
     font-style: italic;
     color: var(--lightGrey);
+}
+
+.ant-collapse-content-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.iconOptions{
+    font-size: 10px;
+    margin-right: 5px;
+    color: var(--brownDoor)
 }
