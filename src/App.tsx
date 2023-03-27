@@ -6,12 +6,14 @@ import { Menu } from './Components/Menu/Menu.tsx';
 
 
 export const App = () => {
+
+  const name = 'Ichiraku'
   
   return (
     <div className="App">
       <div className='App__body'>
         <Routes>
-          <Route path="/" element={<Welcome/>} />
+          <Route path="/" element={<Welcome name={name}/>} />
           <Route path="/menu" element={<Menu/>} />
         </Routes>
       </div>
