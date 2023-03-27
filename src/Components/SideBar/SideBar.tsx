@@ -7,11 +7,17 @@ import { VscCircleFilled } from 'react-icons/vsc'
 
 const { Panel } = Collapse;
 
+type Menu = {
+    name: String,
+    price: String,
+    ingredients: Array<String>
+}
+
 interface ISidebar {
-    ramens: Array<Object>,
-    sushis: Array<Object>,
-    drinks: Array<Object>,
-    desserts: Array<Object>
+    ramens: Array<Menu>,
+    sushis: Array<Menu>,
+    drinks: Array<Menu>,
+    desserts: Array<Menu>
 }
 
 export const SideBar: React.FC<ISidebar> = ({ramens, sushis, drinks, desserts}) => {
