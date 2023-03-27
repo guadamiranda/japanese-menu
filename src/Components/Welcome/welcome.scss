@@ -9,9 +9,12 @@
         display: flex;
         flex-direction: column;
         padding-right: 10px;
-        font-size: 50px;
+        font-size: 35px;
         color: var(--blackOpacity);
         align-items: flex-end;
+        animation-name: rightJapanese;
+        animation-duration: 2s;
+        position: relative;
     }
 
     &__center-side{
@@ -22,25 +25,25 @@
         justify-content: center;
 
         &__text{
-            font-size: 30px;
-            padding-right: 350px;
+            font-size: 55px;
+            padding-right: 600px;
             animation-name: welcomeTo;
-            animation-duration: 1s;
+            animation-duration: 2s;
             position: relative;
             color: var(--blackOpacity);
         }
 
         &__name{
-            font-size: 55px;
-            letter-spacing: 10px;
+            font-size: 85px;
+            letter-spacing: 15px;
 
         }
 
         &__menu{
-            font-size: 30px;
-            padding-left: 350px;
+            font-size: 55px;
+            padding-left: 600px;
             animation-name: menu;
-            animation-duration: 1s;
+            animation-duration: 2s;
             position: relative;
             color: var(--blackOpacity);
 
@@ -52,10 +55,14 @@
         height: 25vh;
         display: flex;
         flex-direction: column;
-        padding-right: 10px;
-        font-size: 50px;
+        padding-left: 10px;
+        font-size: 35px;
         color: var(--blackOpacity);
-        align-items: flex-end;
+        align-items: flex-start;
+        justify-content: flex-end;
+        animation-name: leftJapanese;
+        animation-duration: 2s;
+        position: relative;
     }
 }
 
@@ -82,5 +89,31 @@
     100%{
             color: var(--blackOpacity);
             left: 0px;
+        }
+}
+
+@keyframes leftJapanese {
+    0%  {
+            color: var(--blackTransparent);
+            top: -30px;
+
+        }
+
+    100%{
+            color: var(--blackOpacity);
+            top: 0px;
+        }
+}
+
+@keyframes rightJapanese {
+    0%  {
+            color: var(--blackTransparent);
+            bottom: -30px;
+
+        }
+
+    100%{
+            color: var(--blackOpacity);
+            bottom: 0px;
         }
 }

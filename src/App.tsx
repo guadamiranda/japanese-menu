@@ -1,16 +1,19 @@
 import React from 'react'
+import { Routes, Route } from 'react-router';
 import './App.scss';
 import { Welcome } from './Components/Welcome/Welcome.tsx';
+import { Menu } from './Components/Menu/Menu.tsx';
 
 
 export const App = () => {
-
-  const name = 'Ichiraku'
   
   return (
     <div className="App">
       <div className='App__body'>
-        <Welcome name={name}/>
+        <Routes>
+          <Route path="/" element={<Welcome/>} />
+          <Route path="/menu" element={<Menu/>} />
+        </Routes>
       </div>
     </div>
   );

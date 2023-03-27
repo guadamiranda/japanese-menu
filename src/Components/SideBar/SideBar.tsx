@@ -1,5 +1,6 @@
 import React from 'react'
 import './sidebar.scss'
+import { useNavigate } from 'react-router-dom';
 import { Collapse } from 'antd';
 import { MdOutlineRamenDining, MdOutlineIcecream } from 'react-icons/md'
 import { BiSushi, BiDrink } from 'react-icons/bi'
@@ -21,10 +22,15 @@ interface ISidebar {
 }
 
 export const SideBar: React.FC<ISidebar> = ({ramens, sushis, drinks, desserts}) => {
+    const navigate = useNavigate();
 
     const panelStyle = {
         borderBottom: '3px solid #b98357',
         fontSize: '20px',
+    }
+
+    const navigateMenu = () => {  
+        navigate('/menu')
     }
 
     return(
@@ -34,7 +40,7 @@ export const SideBar: React.FC<ISidebar> = ({ramens, sushis, drinks, desserts}) 
                 <div className='sidebar__body__section'>
                     <Collapse size="small" bordered={false}>
                         <Panel header={<div className='sidebar__body__section__title'><span>Ramen<span className='tinyJapaneseSpan'>拉麺</span></span><MdOutlineRamenDining className='icon-menu'/></div>} key="1" style={panelStyle}>
-                            {ramens.map((ramen) => <button className='sidebar__body__section__options'><VscCircleFilled className='iconOptions'/>{ramen.name}</button>)}
+                            {ramens.map((ramen) => <button onClick={() => navigateMenu()} className='sidebar__body__section__options'><VscCircleFilled className='iconOptions'/>{ramen.name}</button>)}
                         </Panel>
                         <Panel header={<div className='sidebar__body__section__title'><span>Sushi<span className='tinyJapaneseSpan'>寿司</span></span><BiSushi className='icon-menu'/></div>} key="2" style={panelStyle}>
                             {sushis.map((sushi) => <button className='sidebar__body__section__options' ><VscCircleFilled className='iconOptions'/>{sushi.name}</button>)}

@@ -15,7 +15,7 @@ export const Welcome: React.FC<IWelcome> = ({name}) => {
             </div>
             <div className='welcome__center-side'>
                 <span className='welcome__center-side__text'>Welcome to</span>
-                <span className='welcome__center-side__name'><i> - {name}'s - </i> </span>
+                <span className='welcome__center-side__name'><i> - Ichiraku's - </i> </span>
                 <span className='welcome__center-side__menu'>Menu</span>
             </div>
             <div className='welcome__left-side'>
