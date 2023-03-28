@@ -1,9 +1,23 @@
 @import '../../Styles/colors.scss';
 
 .menuImage{
-    background-color: aqua;
     width: 80%;
-    height: 60%;
+    height: 100px;
     display: flex;
-    border-right: 4px solid var(--brownDoor);
+    border-left: 4px solid var(--brownDoor);
+    
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    span{
+        position: absolute;
+        color: var(--brownDoorOpacity);
+        font-size: 30px;
+        margin-left: 5px;
+        letter-spacing: 10px;
+    }
 }
