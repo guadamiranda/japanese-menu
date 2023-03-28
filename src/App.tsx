@@ -2,7 +2,7 @@ import React from 'react'
 import { Routes, Route } from 'react-router';
 import './App.scss';
 import { Welcome } from './Components/Welcome/Welcome.tsx';
-import { Menu } from './Components/Menu/Menu.tsx';
+import { Menu } from '../src/Views/Menu/Menu.tsx';
 
 
 export const App = () => {

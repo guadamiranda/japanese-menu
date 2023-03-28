@@ -1,0 +1,9 @@
+@import '../../Styles/colors.scss';
+
+.menuImage{
+    background-color: aqua;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    border-right: 4px solid var(--brownDoor);
+}

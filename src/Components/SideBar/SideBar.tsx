@@ -29,8 +29,8 @@ export const SideBar: React.FC<ISidebar> = ({ramens, sushis, drinks, desserts}) 
         fontSize: '20px',
     }
 
-    const navigateMenu = () => {  
-        navigate('/menu')
+    const navigateMenu = (menuItem) => {  
+        navigate('/menu', {state: {menu: menuItem}})
     }
 
     return(
@@ -40,16 +40,16 @@ export const SideBar: React.FC<ISidebar> = ({ramens, sushis, drinks, desserts}) 
                 <div className='sidebar__body__section'>
                     <Collapse size="small" bordered={false}>
                         <Panel header={<div className='sidebar__body__section__title'><span>Ramen<span className='tinyJapaneseSpan'>拉麺</span></span><MdOutlineRamenDining className='icon-menu'/></div>} key="1" style={panelStyle}>
-                            {ramens.map((ramen) => <button onClick={() => navigateMenu()} className='sidebar__body__section__options'><VscCircleFilled className='iconOptions'/>{ramen.name}</button>)}
+                            {ramens.map((ramen) => <button onClick={() => navigateMenu(ramen)} className='sidebar__body__section__options'><VscCircleFilled className='iconOptions'/>{ramen.name}</button>)}
                         </Panel>
                         <Panel header={<div className='sidebar__body__section__title'><span>Sushi<span className='tinyJapaneseSpan'>寿司</span></span><BiSushi className='icon-menu'/></div>} key="2" style={panelStyle}>
-                            {sushis.map((sushi) => <button className='sidebar__body__section__options' ><VscCircleFilled className='iconOptions'/>{sushi.name}</button>)}
+                            {sushis.map((sushi) => <button onClick={() => navigateMenu(sushi)} className='sidebar__body__section__options' ><VscCircleFilled className='iconOptions'/>{sushi.name}</button>)}
                         </Panel>
                         <Panel header={<div className='sidebar__body__section__title'><span>Drink<span className='tinyJapaneseSpan'>飲む</span></span><BiDrink className='icon-menu'/></div>} key="3" style={panelStyle}>
-                            {drinks.map((drink) => <button className='sidebar__body__section__options' ><VscCircleFilled className='iconOptions'/>{drink.name}</button>)}
+                            {drinks.map((drink) => <button onClick={() => navigateMenu(drink)} className='sidebar__body__section__options' ><VscCircleFilled className='iconOptions'/>{drink.name}</button>)}
                         </Panel>
                         <Panel header={<div className='sidebar__body__section__title'><span>Dessert<span className='tinyJapaneseSpan'>デザート</span></span><MdOutlineIcecream className='icon-menu'/></div>} key="4" style={panelStyle}>
-                            {desserts.map((dessert) => <button className='sidebar__body__section__options' ><VscCircleFilled className='iconOptions'/>{dessert.name}</button>)}  
+                            {desserts.map((dessert) => <button onClick={() => navigateMenu(dessert)} className='sidebar__body__section__options' ><VscCircleFilled className='iconOptions'/>{dessert.name}</button>)}  
                         </Panel>
                     </Collapse>
                 </div>
