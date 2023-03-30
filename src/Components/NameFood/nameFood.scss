@@ -1,0 +1,10 @@
+@import '../../Styles/colors.scss';
+
+.nameFood{
+    background-color: var(--whiteLamp);
+    border-left: 3px solid var(--brownDoor);
+    height: 60px;
+    width: 190px;
+    top: 85px;
+    left: 450px;
+}

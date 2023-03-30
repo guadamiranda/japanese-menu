@@ -1,13 +1,15 @@
-import React from "react"
+import React from "react";
+import './nameFood.scss'
+
 import { MdOutlineRamenDining, MdOutlineIcecream } from 'react-icons/md'
 import { BiSushi, BiDrink } from 'react-icons/bi'
-import './loader.scss'
 
-interface ILoader {
-    type: String
+interface INameFood {
+    name: String;
+    type: String;
 }
 
-export const Loader: React.FC<ILoader> = ({type}) => {
+export const NameFood: React.FC<INameFood> = ({name, type}) => {
 
     const IconSelector = () => {
         const iconFoods = [{name: 'ramen', icon: <MdOutlineRamenDining/>},
@@ -18,14 +20,14 @@ export const Loader: React.FC<ILoader> = ({type}) => {
         const selectedIcon = iconFoods.find((icon) => icon.name === type)
 
         return(
-            <div className="loader__iconAnimation">{selectedIcon.icon}</div>
+            <div>{selectedIcon.icon}</div>
         )    
     }
 
     return(
-        <div className="loader">
+        <div className="nameFood">
             <IconSelector ></IconSelector>
-            <span>Preparing your food</span>
+            <span>{name}</span>
         </div>
     )
 }

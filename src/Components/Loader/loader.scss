@@ -1,9 +1,11 @@
 
 .loader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__iconAnimation{
-        animation-name: bounce;
-        animation-duration: 1s infinite;
+        animation: bounce 1s infinite;
     }
 }
 
