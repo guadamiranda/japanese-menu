@@ -52,7 +52,7 @@ export const Menu: React.FC<IMenu> = (menu) => {
                 <br></br>
 
                 <div className='menu__someExamples'>
-                    <SomeExamples/>
+                    <SomeExamples photos={menuInformation.photos}/>
                 </div>
             </> }
         </div>
