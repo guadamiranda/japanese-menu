@@ -15,4 +15,14 @@
         align-items: center;
         justify-content: center;
     }
+
+    &__foodInformation{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__someExamples{
+        display: flex;
+        justify-content: center;
+    }
 }

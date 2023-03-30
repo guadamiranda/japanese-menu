@@ -20,14 +20,14 @@ export const NameFood: React.FC<INameFood> = ({name, type}) => {
         const selectedIcon = iconFoods.find((icon) => icon.name === type)
 
         return(
-            <div>{selectedIcon.icon}</div>
+            <div className='selectedIconFood'>{selectedIcon.icon}</div>
         )    
     }
 
     return(
         <div className="nameFood">
-            <IconSelector ></IconSelector>
-            <span>{name}</span>
+            <IconSelector></IconSelector>
+            <span>- {name} -</span>
         </div>
     )
 }

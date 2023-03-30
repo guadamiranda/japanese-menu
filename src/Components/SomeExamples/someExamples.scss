@@ -1,0 +1,23 @@
+@import '../../Styles/colors.scss';
+
+.someExamples{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title{
+        font-size: 30px;
+        color: var(--blackOpacity);
+
+        b {
+            color: var(--brownDoor)
+        }
+    }
+
+    &__imagensContainer{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+}

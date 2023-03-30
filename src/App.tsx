@@ -4,9 +4,7 @@ import './App.scss';
 import { Welcome } from './Components/Welcome/Welcome.tsx';
 import { Menu } from '../src/Views/Menu/Menu.tsx';
 
-
 export const App = () => {
-
   const name = 'Ichiraku'
   
   return (

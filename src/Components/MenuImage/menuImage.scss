@@ -5,6 +5,9 @@
     height: 100px;
     display: flex;
     border-left: 4px solid var(--brownDoor);
+    box-shadow: -1px 10px 10px -3px rgba(82,82,82,0.75);
+    -webkit-box-shadow: -1px 10px 10px -3px rgba(82,82,82,0.75);
+    -moz-box-shadow: -1px 10px 10px -3px rgba(82,82,82,0.75);
     
     img{
         width: 100%;
