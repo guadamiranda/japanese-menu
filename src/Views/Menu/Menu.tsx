@@ -5,6 +5,7 @@ import { Loader } from "../../Components/Loader/Loader.tsx";
 import { NameFood } from "../../Components/NameFood/NameFood.tsx";
 import { FoodDetails } from "../../Components/FoodDetails/FoodDetails.tsx";
 import { SomeExamples } from "../../Components/SomeExamples/SomeExamples.tsx";
+import { Ingredients } from "../../Components/Ingredients/Ingredients.tsx";
 import './menu.scss'
 
 interface IMenu {
@@ -54,6 +55,14 @@ export const Menu: React.FC<IMenu> = (menu) => {
                 <div className='menu__someExamples'>
                     <SomeExamples photos={menuInformation.photos}/>
                 </div>
+
+                <br></br>
+                <br></br>
+
+                <div className='menu__ingredients'>
+                    <Ingredients photos={menuInformation.ingredients}/>
+                </div>
+
             </> }
         </div>
     )
