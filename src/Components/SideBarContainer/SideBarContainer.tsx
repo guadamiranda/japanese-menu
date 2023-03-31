@@ -23,11 +23,11 @@ import icecream3 from '../../Assets/Img/icecream3.jpg'
 
 export const SideBarContainer = () => {
 
-    const ramens:Array<Object> = [{name: 'Shoyu ', price: '$1800', isVegan: 'No', isTaccFood: 'No', temperature: 'Hot', ingredients: ['chasu', 'greenOnion', 'eggs', 'sesameSeeds', 'shitakeMush', 'nori', 'soup', 'tare', 'noodles', 'narutomaki'], type: 'ramen', photos:[shoyu1, shoyu2, shoyu3]}]
-    const sushis:Array<Object> = [{name: 'Nigiri', price: '$500', isVegan: 'No', isTaccFood: 'Yes', temperature: 'Cold', ingredients: ['sushiRice', 'salmon'], type: 'sushi', photos:[nigiri1, nigiri2, nigiri3]}]
-    const drinks:Array<Object> = [{name: 'Lemonade', price: '$800', isVegan: 'Yes', isTaccFood: 'Yes', temperature: 'Cold', ingredients: ['water', 'lemon', 'ginger', 'mint'], type:'drink', photos:[lemonade1, lemonade2, lemonade3]},
-                                  {name: 'Coca Cola', price: '$400', isVegan: 'Yes', isTaccFood: 'Yes', temperature: 'Cold', ingredients:['coca'], type:'drink', photos:[cocacola1, cocacola2, cocacola3]}]
-    const dessert:Array<Object> = [{name: 'Ice Cream', price: '$800', isVegan: 'No', isTaccFood: 'Yes', temperature: 'Cold', ingredients:['iceCream'], type:'dessert', photos:[icecream1, icecream2, icecream3]}]
+    const ramens:Array<Object> = [{name: 'Shoyu ', price: '$1800', isVegan: 'No', isTaccFood: 'No', temperature: 'Hot', ingredients: [{name:'Chasu'}, {name:'Green Onion'}, {name:'Eggs'}, {name:'Sesame Seeds'}, {name:'Shitake Mushroom'}, {name:'Nori'}, {name:'Soup'}, {name:'Tare'}, {name:'Noodles'}, {name:'Narutomaki'}], type: 'ramen', photos:[shoyu1, shoyu2, shoyu3]}]
+    const sushis:Array<Object> = [{name: 'Nigiri', price: '$500', isVegan: 'No', isTaccFood: 'Yes', temperature: 'Cold', ingredients: [{name:'Sushi Rice'}, {name:'Salmon'}], type: 'sushi', photos:[nigiri1, nigiri2, nigiri3]}]
+    const drinks:Array<Object> = [{name: 'Lemonade', price: '$800', isVegan: 'Yes', isTaccFood: 'Yes', temperature: 'Cold', ingredients: [{name:'water'}, {name:'Lemon'}, {name:'Ginger'}, {name:'Mint'}], type:'drink', photos:[lemonade1, lemonade2, lemonade3]},
+                                  {name: 'Coca Cola', price: '$400', isVegan: 'Yes', isTaccFood: 'Yes', temperature: 'Cold', ingredients:[{name:'Secret'}], type:'drink', photos:[cocacola1, cocacola2, cocacola3]}]
+    const dessert:Array<Object> = [{name: 'Ice Cream', price: '$800', isVegan: 'No', isTaccFood: 'Yes', temperature: 'Cold', ingredients:[{name:'Ice Cream'}], type:'dessert', photos:[icecream1, icecream2, icecream3]}]
 
 
     return(

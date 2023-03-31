@@ -60,7 +60,7 @@ export const Menu: React.FC<IMenu> = (menu) => {
                 <br></br>
 
                 <div className='menu__ingredients'>
-                    <Ingredients photos={menuInformation.ingredients}/>
+                    <Ingredients ingredients={menuInformation.ingredients}/>
                 </div>
 
             </> }

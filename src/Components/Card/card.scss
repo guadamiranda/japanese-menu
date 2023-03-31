@@ -1,0 +1,23 @@
+@import '../../Styles/colors.scss';
+
+.card {
+    background-color: var(--whiteLamp);
+    margin: 10px;
+    width: 15vw;
+    height: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    &__information{
+        padding: 9px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    &__icon{
+        color: var(--brownDoor)
+    }
+}

@@ -2,14 +2,17 @@
 
 .sidebar{
     width: 300px;
-    height: 100vh;
+    height: 1300px;
     top: 0;
     left: 0;
     position: absolute;
-    //background: url(//s.ytimg.com/yt/imgbin/www-refreshbg-vflC3wnbM.png) 0 0;
     background-color: var(--whiteLamp);
     background-repeat: repeat;
     border-right: 8px solid var(--brownDoor);
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
 
     &__title{
         display: flex;
@@ -45,6 +48,12 @@
                 background-color: var(--options);
                 transition: 0.5s;
             } 
+
+            &__credits{
+                font-size: 13px;
+                padding: 5px;
+                text-align: center;
+            }
         }
     }
 }
