@@ -22,7 +22,7 @@ export const Menu: React.FC<IMenu> = (menu) => {
         setIsLoading(true);
         setTimeout(function(){
             setIsLoading(false);
-        }, 299500)
+        }, 2500)
     }, [menuInformation])
 
     return(
