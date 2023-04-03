@@ -8,10 +8,20 @@ import { VscCircleFilled } from 'react-icons/vsc'
 
 const { Panel } = Collapse;
 
+type Ingredients = {
+    name: string,
+    url: string
+}
+
 type Menu = {
-    name: String,
-    price: String,
-    ingredients: Array<String>
+    name: string,
+    isVegan: string,
+    isTaccFood: string,
+    temperature: string,
+    price: string,
+    ingredients: Array<Ingredients>
+    type: string,
+    photos: Array<string>
 }
 
 interface ISidebar {

@@ -80,17 +80,32 @@ import secret from '../../Assets/Img/secret.jpg'
 
 
 export const SideBarContainer = () => {
+    type Ingredients = {
+        name: string,
+        url: string
+    }
 
-    const ramens:Array<Object> = [{name: 'Shoyu', price: '$1800', isVegan: 'No', isTaccFood: 'No', temperature: 'Hot', ingredients: [{name:'Chashu', url: chashu}, {name:'Green Onion', url: green}, {name:'Eggs', url:eggs}, {name:'Sesame Seeds', url: sesame}, {name:'Shitake Mushroom', url: shitake}, {name:'Nori', url: nori}, {name:'Soup', url: soup}, {name:'Tare', url: tare}, {name:'Noodles', url: noodles}, {name:'Narutomaki', url: narutomaki}], type: 'ramen', photos:[shoyu1, shoyu2, shoyu3]},
+    type MenuInfo = {
+        name: string,
+        isVegan: string,
+        isTaccFood: string,
+        temperature: string,
+        price: string,
+        ingredients: Array<Ingredients>
+        type: string,
+        photos: Array<string>
+    }
+    
+    const ramens:Array<MenuInfo> = [{name: 'Shoyu', price: '$1800', isVegan: 'No', isTaccFood: 'No', temperature: 'Hot', ingredients: [{name:'Chashu', url: chashu}, {name:'Green Onion', url: green}, {name:'Eggs', url:eggs}, {name:'Sesame Seeds', url: sesame}, {name:'Shitake Mushroom', url: shitake}, {name:'Nori', url: nori}, {name:'Soup', url: soup}, {name:'Tare', url: tare}, {name:'Noodles', url: noodles}, {name:'Narutomaki', url: narutomaki}], type: 'ramen', photos:[shoyu1, shoyu2, shoyu3]},
                                   {name: 'Miso', price: '$1500', isVegan: 'No', isTaccFood: 'No', temperature: 'Hot', ingredients: [{name:'Broth', url: broth}, {name:'Green Onion', url: green}, {name:'Eggs', url:eggs}, {name:'Corn', url: corn}, {name:'Shitake Mushroom', url: shitake}, {name:'Bacon', url: bacon}, {name:'Garlic', url: garlic}, {name:'Butter', url: butter}, {name:'Noodles', url: noodles}, {name:'Nori', url: nori}], type: 'ramen', photos:[misoramen1, misoramen2, misoramen3]}]
-    const sushis:Array<Object> = [{name: 'Nigiri', price: '$500', isVegan: 'No', isTaccFood: 'Yes', temperature: 'Cold', ingredients: [{name:'Sushi Rice', url: rice}, {name:'Salmon', url: salmon}], type: 'sushi', photos:[nigiri1, nigiri2, nigiri3]},
+    const sushis:Array<MenuInfo> = [{name: 'Nigiri', price: '$500', isVegan: 'No', isTaccFood: 'Yes', temperature: 'Cold', ingredients: [{name:'Sushi Rice', url: rice}, {name:'Salmon', url: salmon}], type: 'sushi', photos:[nigiri1, nigiri2, nigiri3]},
                                   {name: 'California Roll', price: '$600', isVegan: 'No', isTaccFood: 'Yes', temperature: 'Cold', ingredients: [{name:'Sushi Rice', url: rice}, {name:'Salmon', url: salmon}, {name:'Avocado', url: avocado}, {name:'Cream Cheese', url: cheese}], type: 'sushi', photos:[california1, california2, california3]},
                                   {name: 'Shrimp Roll', price: '$600', isVegan: 'No', isTaccFood: 'Yes', temperature: 'Cold', ingredients: [{name:'Sushi Rice', url: rice}, {name:'Shrimp', url: shrimp}, {name:'Avocado', url: avocado}, {name:'Cream Cheese', url: cheese}, {name:'Egg Roll', url: eggRoll}], type: 'sushi', photos:[shrimp1, shrimp2, shrimp3]},
                                   {name: 'Tamago', price: '$400', isVegan: 'No', isTaccFood: 'Yes', temperature: 'Cold', ingredients: [{name:'Sushi Rice', url: rice}, {name:'Nori', url: nori}, {name:'Egg Roll', url: eggRoll} ], type: 'sushi', photos:[rollEgg1, rollEgg2, rollEgg3]},
                                   {name: 'Gohan', price: '$1100', isVegan: 'No', isTaccFood: 'Yes', temperature: 'Cold', ingredients: [{name:'Sushi Rice', url: rice}, {name:'Salmon', url: salmon}, {name:'Shrimp', url: shrimp}, {name:'Cream Cheese', url: cheese}, {name:'Avocado', url: avocado}, {name:'Green Onion', url: green}], type: 'sushi', photos:[gohan1, gohan2, gohan3]}]
-    const drinks:Array<Object> = [{name: 'Lemonade', price: '$800', isVegan: 'Yes', isTaccFood: 'Yes', temperature: 'Cold', ingredients: [{name:'Water', url: water}, {name:'Lemon', url: lemon}, {name:'Ginger', url: ginger}, {name:'Mint', url: mint}], type:'drink', photos:[lemonade1, lemonade2, lemonade3]},
+    const drinks:Array<MenuInfo> = [{name: 'Lemonade', price: '$800', isVegan: 'Yes', isTaccFood: 'Yes', temperature: 'Cold', ingredients: [{name:'Water', url: water}, {name:'Lemon', url: lemon}, {name:'Ginger', url: ginger}, {name:'Mint', url: mint}], type:'drink', photos:[lemonade1, lemonade2, lemonade3]},
                                   {name: 'Coca Cola', price: '$400', isVegan: 'Yes', isTaccFood: 'Yes', temperature: 'Cold', ingredients:[{name:'Secret', url: secret}], type:'drink', photos:[cocacola1, cocacola2, cocacola3]}]
-    const dessert:Array<Object> = [{name: 'Ice Cream', price: '$800', isVegan: 'No', isTaccFood: 'Yes', temperature: 'Cold', ingredients:[{name:'Chocolate', url: chocolate}, {name:'Vainilla', url: vainilla}, {name:'Dulce de Leche', url: dulcedeleche}], type:'dessert', photos:[icecream1, icecream2, icecream3]}]
+    const dessert:Array<MenuInfo> = [{name: 'Ice Cream', price: '$800', isVegan: 'No', isTaccFood: 'Yes', temperature: 'Cold', ingredients:[{name:'Chocolate', url: chocolate}, {name:'Vainilla', url: vainilla}, {name:'Dulce de Leche', url: dulcedeleche}], type:'dessert', photos:[icecream1, icecream2, icecream3]}]
 
 
     return(

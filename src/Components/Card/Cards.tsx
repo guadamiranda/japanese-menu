@@ -8,7 +8,6 @@ interface ICard {
 }
 
 export const Card: React.FC<ICard> = ({name, url}) => {
-    console.log(url)
     return(
         <div className="card">
             <img src={url} alt='ingredient'></img>

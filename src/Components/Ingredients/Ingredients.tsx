@@ -3,8 +3,12 @@ import './ingredients.scss'
 
 import { Card } from "../Card/Cards.tsx";
 
+type details = {
+    name: string, 
+    url: string
+}
 interface Iingredients {
-    ingredients: Array<string>
+    ingredients: Array<details>
 }
 
 export const Ingredients: React.FC<Iingredients> = ({ingredients}) => {
