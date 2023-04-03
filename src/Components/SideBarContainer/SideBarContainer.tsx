@@ -21,6 +21,10 @@ import icecream1 from '../../Assets/Img/icecream1.jpg'
 import icecream2 from '../../Assets/Img/icecream2.jpg'
 import icecream3 from '../../Assets/Img/icecream3.jpg'
 
+import misoramen1 from '../../Assets/Img/misoRamen.jpg'
+import misoramen2 from '../../Assets/Img/misoRamen2.jpg'
+import misoramen3 from '../../Assets/Img/misoRamen3.jpg'
+
 import noodles from '../../Assets/Img/noodles.jpg'
 import chashu from '../../Assets/Img/chashu.jpg'
 import green from '../../Assets/Img/greenonion.jpg'
@@ -31,6 +35,12 @@ import sesame from '../../Assets/Img/sesameseeds.jpg'
 import nori from '../../Assets/Img/nori.jpg'
 import soup from '../../Assets/Img/soup.jpg'
 import narutomaki from '../../Assets/Img/narutomaki.jpg'
+
+import corn from '../../Assets/Img/corn.jpg'
+import bacon from '../../Assets/Img/bacon.jpg'
+import butter from '../../Assets/Img/butter.jpg'
+import garlic from '../../Assets/Img/Garlic.jpg'
+import broth from '../../Assets/Img/broth.jpg'
 
 import chocolate from '../../Assets/Img/chocolate.jpg'
 import vainilla from '../../Assets/Img/vainilla.jpg'
@@ -49,7 +59,8 @@ import secret from '../../Assets/Img/secret.jpg'
 
 export const SideBarContainer = () => {
 
-    const ramens:Array<Object> = [{name: 'Shoyu ', price: '$1800', isVegan: 'No', isTaccFood: 'No', temperature: 'Hot', ingredients: [{name:'Chashu', url: chashu}, {name:'Green Onion', url: green}, {name:'Eggs', url:eggs}, {name:'Sesame Seeds', url: sesame}, {name:'Shitake Mushroom', url: shitake}, {name:'Nori', url: nori}, {name:'Soup', url: soup}, {name:'Tare', url: tare}, {name:'Noodles', url: noodles}, {name:'Narutomaki', url: narutomaki}], type: 'ramen', photos:[shoyu1, shoyu2, shoyu3]}]
+    const ramens:Array<Object> = [{name: 'Shoyu', price: '$1800', isVegan: 'No', isTaccFood: 'No', temperature: 'Hot', ingredients: [{name:'Chashu', url: chashu}, {name:'Green Onion', url: green}, {name:'Eggs', url:eggs}, {name:'Sesame Seeds', url: sesame}, {name:'Shitake Mushroom', url: shitake}, {name:'Nori', url: nori}, {name:'Soup', url: soup}, {name:'Tare', url: tare}, {name:'Noodles', url: noodles}, {name:'Narutomaki', url: narutomaki}], type: 'ramen', photos:[shoyu1, shoyu2, shoyu3]},
+                                  {name: 'Miso', price: '$1500', isVegan: 'No', isTaccFood: 'No', temperature: 'Hot', ingredients: [{name:'Broth', url: broth}, {name:'Green Onion', url: green}, {name:'Eggs', url:eggs}, {name:'Corn', url: corn}, {name:'Shitake Mushroom', url: shitake}, {name:'Bacon', url: bacon}, {name:'Garlic', url: garlic}, {name:'Butter', url: butter}, {name:'Noodles', url: noodles}, {name:'Nori', url: nori}], type: 'ramen', photos:[misoramen1, misoramen2, misoramen3]}]
     const sushis:Array<Object> = [{name: 'Nigiri', price: '$500', isVegan: 'No', isTaccFood: 'Yes', temperature: 'Cold', ingredients: [{name:'Sushi Rice', url: rice}, {name:'Salmon', url: salmon}], type: 'sushi', photos:[nigiri1, nigiri2, nigiri3]}]
     const drinks:Array<Object> = [{name: 'Lemonade', price: '$800', isVegan: 'Yes', isTaccFood: 'Yes', temperature: 'Cold', ingredients: [{name:'Water', url: water}, {name:'Lemon', url: lemon}, {name:'Ginger', url: ginger}, {name:'Mint', url: mint}], type:'drink', photos:[lemonade1, lemonade2, lemonade3]},
                                   {name: 'Coca Cola', price: '$400', isVegan: 'Yes', isTaccFood: 'Yes', temperature: 'Cold', ingredients:[{name:'Secret', url: secret}], type:'drink', photos:[cocacola1, cocacola2, cocacola3]}]
