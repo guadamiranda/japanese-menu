@@ -3,14 +3,15 @@ import './card.scss'
 import { VscCircleFilled } from 'react-icons/vsc'
 
 interface ICard {
-    name: String; 
-    url: String;
+    name: string; 
+    url: string;
 }
 
 export const Card: React.FC<ICard> = ({name, url}) => {
+    console.log(url)
     return(
         <div className="card">
-            <img alt='ingredientImg'></img>
+            <img src={url} alt='ingredient'></img>
             <div className="card__information">
                 <VscCircleFilled className='card__icon'/>
                 <span>{name}</span>

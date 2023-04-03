@@ -4,7 +4,6 @@
     background-color: var(--whiteLamp);
     margin: 10px;
     width: 15vw;
-    height: 17vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -19,5 +18,10 @@
 
     &__icon{
         color: var(--brownDoor)
+    }
+
+    img{
+        height: 100px;
+        object-fit: cover;
     }
 }
