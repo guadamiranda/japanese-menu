@@ -18,7 +18,9 @@
     &__imagensContainer{
         display: flex;
         width: 100%;
+        min-height: 300px;
         justify-content: center;
+        flex-wrap: wrap;
 
         img{
             width: 280px;
@@ -29,6 +31,13 @@
             -moz-box-shadow: -1px 10px 10px -3px rgba(82,82,82,0.75);
             border-top: 6px solid var(--brownDoor);
             object-fit: cover;
+            transition: 0.3s;
+        }
+
+        img:hover {
+            width: 300px;
+            height: 240px;
+            transition: 0.3s;
         }
     }
 }

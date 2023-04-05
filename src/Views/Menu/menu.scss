@@ -1,7 +1,7 @@
 
 .menu{
-    height: 100%;
     width: 100%;
+    min-height: 100vh;
 
     &__image{
         display: flex;
@@ -23,5 +23,11 @@
     &__someExamples{
         display: flex;
         justify-content: center;
+    }
+
+    &__ingredients{
+        display: flex;
+        justify-content: center;
+        min-height: 100px;
     }
 }

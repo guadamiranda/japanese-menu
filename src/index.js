@@ -5,15 +5,13 @@ import {
 } from "react-router-dom";
 import './index.css';
 
-import { App } from './App.tsx';
-import { SideBarContainer } from './Components/SideBarContainer/SideBarContainer.tsx';
+import Container from './Views/Container/Container'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <SideBarContainer/>
-      <App/>
+      <Container/>
     </BrowserRouter>
   </React.StrictMode>
 );
